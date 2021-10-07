@@ -3,18 +3,18 @@ const { toJSON } = require('./plugins');
 
 const imageUploadSchema = mongoose.Schema(
   {
-    
+
   {
     timestamps: true,
   }
 );
 
 // add plugin that converts mongoose to json
-tokenSchema.plugin(toJSON);
+imageUploadSchema.plugin(toJSON);
 
 /**
- * @typedef Token
+ * @typedef Image
  */
-const Token = mongoose.model('Token', tokenSchema);
+const Image = mongoose.model('Image', imageUploadSchema);
 
-module.exports = Token;
+module.exports = Image;
