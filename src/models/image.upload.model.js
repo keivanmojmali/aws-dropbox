@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const { toJSON } = require('./plugins');
 
-const fileSchema = mongoose.Schema(
+const imageUploadSchema = mongoose.Schema(
   {
     token: {
       type: String,
