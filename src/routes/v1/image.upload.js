@@ -5,7 +5,7 @@ const swaggerDefinition = require('../../docs/swaggerDef');
 
 const router = express.Router();
 
-router.get('/',(req,res,next) => {
+router.get('/test',(req,res,next) => {
   res.status(200).json({'response': 'Hello! Success'});
 })
 
