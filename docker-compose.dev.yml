@@ -1,6 +1,6 @@
 version: '3'
 
 services:
-  aws-dropbox:
-    container_name: aws-dropbox-dev
+  node-app:
+    container_name: node-app-dev
     command: yarn dev -L
